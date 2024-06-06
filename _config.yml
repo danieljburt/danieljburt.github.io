@@ -1,0 +1,38 @@
+# Site settings
+title: Dan Burt
+email: daniel.burt@mpimet.mpg.de
+description: >- # this means to ignore newlines until "baseurl:"
+  A simple description of your website. This will be used in meta tags and the home page.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://danieljburt.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# GitHub settings
+# Replace 'yourusername' with your actual GitHub username
+repository: danieljburt/danieljburt.github.io
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Plugins (optional, comment out if not needed)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Defaults
+defaults:
+  - scope:
+      path: "" # an empty string means all files in the project
+    values:
+      layout: "default"
+      author: "Dan Burt"
